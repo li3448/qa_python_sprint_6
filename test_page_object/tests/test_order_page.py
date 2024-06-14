@@ -15,7 +15,14 @@ class TestOrderPage:
     @pytest.mark.parametrize(
         "expected_result",
         [
-            (OrderAnswer.ANSWER_0)
+            (0, Answers.ANSWER_0),
+        (1, Answers.ANSWER_1),
+        (2, Answers.ANSWER_2),
+        (3, Answers.ANSWER_3),
+        (4, Answers.ANSWER_4),
+        (5, Answers.ANSWER_5),
+        (6, Answers.ANSWER_6),
+        (7, Answers.ANSWER_7)
         ]
     )
     def test_positive_order(self, driver, expected_result):
